@@ -4193,27 +4193,26 @@ html.no-csstransitions .s-hero__content {
     background-size: contain;
 }
 
-.service-icon--product-design {
+.service-icon--interior-design {
     background-image: url(../images/icons/services/icon-interior-design.svg);
 }
 
-.service-icon--branding {
+.service-icon--3D-Visualization {
     background-image: url(../images/icons/services/icon-3d-visualisation.svg);
 }
 
-.service-icon--frontend {
+.service-icon--Virtual-Reality {
     background-image: url(../images/icons/services/icon-virtual-reality.svg);
 }
-
-.service-icon--research {
+.service-icon--space-planning {
     background-image: url(../images/icons/services/icon-space-planning.svg);
 }
 
-.service-icon--illustration {
+.service-icon--architectural-rendering {
     background-image: url(../images/icons/services/icon-architectural-rendering.svg);
 }
 
-.service-icon--ecommerce {
+.service-icon--turnkey-solutions {
     background-image: url(../images/icons/services/icon-turnkey-solutions.svg);
 }
 
