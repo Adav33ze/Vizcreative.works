@@ -5001,3 +5001,50 @@ html.no-csstransitions .s-hero__content {
         font-size: 1.4rem;
     }
 }
+/* Hero section responsive fixes */
+.s-hero__content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.s-hero__content-about {
+    width: 100%;
+}
+
+.s-hero__content-about .hero-text {
+    /* Remove <br> tags and control line breaks with CSS instead */
+    line-height: 1.6;
+    white-space: normal;
+    word-wrap: break-word;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* iPhone-specific media query for iPhone 12 Pro Max */
+@media only screen 
+and (device-width: 428px) 
+and (device-height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+/* General media query for small screens */
+only screen and (max-width: 480px) {
+    .s-hero__content {
+        text-align: center;
+        padding: 0 16px;
+    }
+    
+    .s-hero__content-about .hero-text {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        display: block;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .s-hero__content-social {
+        justify-content: center;
+    }
+}
