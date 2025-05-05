@@ -3478,7 +3478,7 @@ input::-moz-focus-inner {
  * # hero
  *
  * ------------------------------------------------------------------- */
-.s-hero {
+ .s-hero {
     background-color: #121417;
     width: 100%;
     height: 100vh;
@@ -3538,7 +3538,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content h1 {
-    font-size: 22rem;
+    font-size: clamp(6rem, 15vw, 22rem); /* Responsive font size */
     font-weight: 600;
     letter-spacing: -.04em;
     line-height: 1;
@@ -3713,7 +3713,40 @@ html.no-csstransitions .s-hero__content {
     opacity: 1;
 }
 
+/* Mobile optimizations */
+@media screen and (max-width: 767px) {
+    .s-hero__content h1::before {
+        height: 5rem; /* Scale down the dots graphic */
+        width: 10rem;
+        transform: translateX(-2rem);
+    }
+    
+    .s-hero__content-about {
+        font-size: 2.4rem; /* Make the paragraph text smaller */
+        padding-left: 2.4em; /* Adjust padding accordingly */
+    }
+    
+    .s-hero__bg {
+        left: 20vw; /* Adjust background image for better mobile visibility */
+    }
+}
 
+/* For even smaller phones */
+@media screen and (max-width: 480px) {
+    .s-hero__content h1 {
+        letter-spacing: -.02em; /* Adjust letter spacing on smallest screens */
+    }
+    
+    .s-hero__content h1::before {
+        height: 4rem; /* Further scale down the dots graphic */
+        width: 8rem;
+    }
+    
+    .s-hero__content-about {
+        font-size: 2rem; /* Even smaller text */
+        padding-left: 2em;
+    }
+}
 /* ------------------------------------------------------------------- 
  * ## animations
  * ------------------------------------------------------------------- */
